@@ -2,8 +2,12 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    assetPrefix: process.env.ASSET_PREFIX || '/',
+    output: 'export',
+    assetPrefix: './',  // Utiliser des chemins relatifs
+    basePath: '/next-blog2', // Remplace par le nom de ton dépôt GitHub
+    images: {
+      unoptimized: true,
+    },
   };
   
   export default nextConfig;
